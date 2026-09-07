@@ -3,7 +3,7 @@
 **Tujuan fase ini:**
 
 - Pasang semua tools yang dibutuhkan.
-- Paham "di balik layar" FastAPI itu jalan di mana.
+- Paham "dibalik layar" FastAPI itu jalan di mana.
 - Menjalankan aplikasi FastAPI pertama + melihat dokumentasi otomatisnya.
 
 > Kalau kamu pernah jalanin FastAPI buat tesis, fase ini mungkin terasa familiar —
