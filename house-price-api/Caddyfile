@@ -1,0 +1,7 @@
+# Caddyfile — reverse proxy + HTTPS otomatis (Let's Encrypt)
+# Nilai $DOMAIN diisi dari environment (baris "environment" di compose)
+
+{$DOMAIN} {
+    # Semua request ke domain ini diteruskan ke service "api" port 8000
+    reverse_proxy api:8000
+}
