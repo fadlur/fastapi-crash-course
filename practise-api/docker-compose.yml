@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app_password
+      POSTGRES_DB: house_price
+    ports:
+      - "5432:5432" # host : container
+    volumes:
+      - pgdata:/var/lib/postgresql/data # data tetap ada walau container restart
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d house_price"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

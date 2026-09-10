@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Environment
+.env
+
+# Model ML (bisa digenerate ulang oleh trainer)
+app/ml/artifacts/*.joblib
+
+# Testing
+.pytest_cache/
+.coverage
+
+# OS
+.DS_Store
