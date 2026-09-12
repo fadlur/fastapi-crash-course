@@ -278,6 +278,7 @@ def root():
     return {
         "nama": settings.APP_NAME,
         "docs": "/docs",
+        "version": settings.APP_VERSION,
         "health": f"{settings.API_V1_PREFIX}/health",
     }
 ```
