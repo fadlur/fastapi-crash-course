@@ -29,4 +29,8 @@ def get_current_user(
     if subject is None:
         raise credentials_error
 
-    return User
+    user = db.get(User, int(subject))
+    if user is None:
+        raise credentials_error
+
+    return user
